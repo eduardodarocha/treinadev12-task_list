@@ -25,8 +25,5 @@ class TasksController < ApplicationController
       task.destroy #destrói a tarefa encontrada
       redirect_to root_path
     end
-
-    def show
-    end
   
 end
