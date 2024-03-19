@@ -1,3 +1,10 @@
 <h1>Boas-vindas à Task List!</h1>
-<p>Isto é uma página HTML</p>
-<em>Criada em <%= Date.today %></em>
+<%# <p>Isto é uma página HTML</p> %>
+<!-- <em>Criada em <%= Date.today %></em> -->
+
+<!-- Isso é um comentário: note que, no exemplo abaixo, não queremos imprimir a iteração (each), somente a descrição das tarefas -->
+
+<% @tasks.each do |task| %>
+  <%= task.description %>
+  <br>
+<% end %>

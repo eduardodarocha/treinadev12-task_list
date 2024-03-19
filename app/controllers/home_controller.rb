@@ -1,5 +1,9 @@
 class HomeController < ApplicationController
   def welcome
-    # render plain: "Hello, World!"
+    # @tasks = []
+    # @tasks << Task.new(description: 'Comprar pão')
+    # @tasks << Task.new(description: 'Comprar leite')
+
+    @tasks = Task.all
   end
 end
